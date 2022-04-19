@@ -13,4 +13,4 @@ VOLUME ["/media/tv-out/"]
 VOLUME ["/media/film-in/"]
 VOLUME ["/media/film-out/"]
 
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["/bin/sh", "/entrypoint.sh"]
