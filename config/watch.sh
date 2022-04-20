@@ -8,5 +8,6 @@ inotifywait -re close_write,moved_to -m --excludei '.*sample\.(avi|mkv|mp4)|.*NO
             su-exec 1000:1000 pwsh /config/normalize.ps1 "$NEWFILE" &
         fi
     done
+ScriptLoc=$(readlink -f "$0")
 exec "$ScriptLoc"
 
